@@ -32,7 +32,7 @@ async def savegroup_and_welcome(bot, message):
             return await bot.leave_chat(message.chat.id)
            
         buttons = [[InlineKeyboardButton('Hᴇʟᴩ', url=f"https://t.me/{temp.U_NAME}?start=help")]]
-        await message.reply(text="❤️ Tʜᴀɴᴋs Tᴏ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜ'ʀ Gʀᴏᴜᴘ.\n» Dᴏɴ'ᴛ Fᴏʀɢᴇᴛ Tᴏ Mᴀᴋᴇ Mᴇ Aᴅᴍɪɴ.\n» Is Aɴʏ Dᴏᴜʙᴛ's Aʙᴏᴜᴛ Usɪɴɢ Mᴇ Cʟɪᴄᴋ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴ...✨", reply_markup=InlineKeyboardMarkup(buttons))
+        await message.reply(text="❤️ Tʜᴀɴᴋs For Aᴅᴅing Mᴇ Tᴏ Yᴏᴜ'ʀ Gʀᴏᴜᴘ.\n» Dᴏɴ'ᴛ Fᴏʀɢᴇᴛ Tᴏ Mᴀᴋᴇ Mᴇ Aᴅᴍɪɴ.\n» Is Aɴʏ Dᴏᴜʙᴛ's Aʙᴏᴜᴛ Usɪɴɢ Mᴇ Cʟɪᴄᴋ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴ...✨", reply_markup=InlineKeyboardMarkup(buttons))
     else:
         for u in message.new_chat_members:
             if (temp.MELCOW).get('welcome') is not None:
